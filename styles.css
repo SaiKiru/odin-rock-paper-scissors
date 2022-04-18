@@ -41,6 +41,8 @@
 
 .card-button:hover {
     outline: 3px solid var(--purple-outline);
+    box-shadow: 0px 6px 16px 4px var(--dark-gray-shadow);
+    scale: 1.05;
 }
 
 .card-button:focus {
