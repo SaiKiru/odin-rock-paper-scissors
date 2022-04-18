@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Montserrat&display=swap');
+
+:root {
+    --red-bg: #fc4563;
+    --blue-bg: #3582f5;
+    --green-bg: #0fb668;
+    --dark-gray-shadow: #16161650;
+    --purple-outline: #8e2dfc;
+    --purple-glow: #7d2efdd2;
+
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+#scoreboard {
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 48px;
+    margin-inline: auto;
+    max-width: 600px;
+}
+
+.card-button {
+    width: 170px;
+    aspect-ratio: 1/1.56;
+    padding: 8px;
+
+    border: none;
+    border-radius: 12px;
+
+    box-shadow: 0px 4px 16px var(--dark-gray-shadow);
+
+    font-family: inherit;
+    background-color: white;
+}
+
+.card-button:hover {
+    outline: 3px solid var(--purple-outline);
+    box-shadow: 0px 6px 16px 4px var(--dark-gray-shadow);
+    scale: 1.05;
+}
+
+.card-button:focus {
+    box-shadow: 0px 3px 12px 8px var(--purple-glow);
+}
+
+.card-button .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.card-button.card-rock .card-body {
+    background-color: var(--red-bg);
+}
+
+.card-button.card-paper .card-body {
+    background-color: var(--blue-bg);
+}
+
+.card-button.card-scissors .card-body {
+    background-color: var(--green-bg);
+}
+
+.card-graphic {
+    font-size: 72px;
+    margin-block: 0.2em;
+}
+
+.card-label {
+    margin-block: 16px;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#message {
+    text-align: center;
+}
+
+#main-message {
+    font-size: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-bottom: 0.2em;
+}
+
+#sub-message {
+    font-family: 'Montserrat', sans serif;
+    font-size: 24px;
+}
